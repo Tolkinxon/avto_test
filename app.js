@@ -10,7 +10,7 @@ app.use(express.json())
 app.get("/", async (req, res)=>{
 
    const tiger = await fs.readFile(path.join(__dirname, "tiger.txt"), 'utf-8')
-   res.json(tiger)
+   res.json(tiger);
 
 })
 
